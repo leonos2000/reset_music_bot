@@ -9,5 +9,5 @@ npm run build >> /dev/null
 cd -
 echo "DONE"
 echo "RESTARTING WEBSERVER SERVICE..."
-service music_bot_restart restart >> /dev/null
+service music_bot_reset restart >> /dev/null
 echo "DONE"
