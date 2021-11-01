@@ -12,6 +12,6 @@ from decouple import config
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', config('SETTING_MODULE', default='portfolio.settings.local'))
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', config('SETTING_MODULE', default='backend.settings.local'))
 
 application = get_wsgi_application()
