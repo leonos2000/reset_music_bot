@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY', default='django-insecure$simple.settings.local')
-
+SECRET_KEY = 'kurwa'
 os.system(f'echo {SECRET_KEY} > /srv/www/testcsrf')
 
 # SECURITY WARNING: don't run with debug turned on in production!
