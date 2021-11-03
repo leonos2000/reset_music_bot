@@ -11,6 +11,6 @@ def mainView(request):
 def rebootView(request):
     if request.method == 'POST':
         if request.POST.get('password') == 'ZmartwychwstajCzarodzieju':
-            os.system('whoami > /srv/test')
+            os.system('docker restart music_bot')
             return JsonResponse({'status': 'success'})
     return JsonResponse({'status': 'fail'})
